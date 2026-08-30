@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>18 — A New Chapter | Minnu</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;background:linear-gradient(180deg,#fff8fb,#fdebf4,#fffafb);color:#49343f}
+.wrap{max-width:900px;margin:auto;padding:18px}
+.hero{min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero-card,.card{background:rgba(255,255,255,.82);border:1px solid rgba(190,120,155,.18);box-shadow:0 18px 55px rgba(130,70,100,.1);border-radius:30px}
+.hero-card{width:100%;padding:55px 24px}
+.card{padding:30px}
+.tiny{letter-spacing:3px;text-transform:uppercase;font:12px Arial,sans-serif;color:#a86b8d}
+h1{font-size:clamp(58px,13vw,100px);margin:12px 0 0;color:#a65d83;font-weight:600}
+h2{font-size:32px;color:#9b597c;margin:12px 0}
+p{font:16px/1.8 Arial,sans-serif}
+.subtitle{font:20px/1.6 Georgia,serif}
+button{border:0;border-radius:999px;padding:13px 22px;background:#c879a1;color:white;font-size:14px;cursor:pointer;margin-top:18px;box-shadow:0 8px 20px rgba(180,90,130,.2)}
+section{padding:55px 0}
+.things{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
+.thing{padding:17px;border-radius:18px;background:#fff3f8;font:15px Arial,sans-serif}
+.thing b{color:#a65d83}
+.memory-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:24px}
+.photo{min-height:190px;border-radius:20px;background:#f5dce8;display:flex;align-items:center;justify-content:center;text-align:center;color:#9c6681;font:15px Arial,sans-serif;padding:20px}
+.quote{text-align:center;font:italic 21px/1.7 Georgia,serif}
+.footer{text-align:center;padding:60px 20px 90px}
+.music{position:fixed;right:15px;bottom:15px;z-index:5}
+.music button{margin:0;background:#9f6282;padding:10px 15px}
+.note{font:12px Arial,sans-serif;color:#967487}
+@media(max-width:650px){.things,.memory-grid{grid-template-columns:1fr}section{padding:40px 0}}
+</style>
+</head>
+<body>
 
+<div class="music"><button onclick="toggleMusic()">♫ Music</button>
+<audio id="bgm" loop><source src="music.mp3" type="audio/mpeg"></audio></div>
+
+<div class="wrap">
+<div class="hero">
+<div class="hero-card">
+<div class="tiny">A little birthday surprise</div>
+<h1>18</h1>
+<h2>A New Chapter of Minnu</h2>
+<p class="subtitle">Someone just turned 18… and yes, this deserves more than a normal birthday text. 😂</p>
+<button onclick="document.getElementById('chapter').scrollIntoView({behavior:'smooth'})">Open your surprise →</button>
+</div>
+</div>
+
+<section id="chapter"><div class="card">
+<div class="tiny">Chapter 01</div><h2>So… you’re 18 now.</h2>
+<p>It’s funny how one number can make everything feel a little different. 18 doesn’t mean life suddenly starts here, or that everything changes overnight. Life has been going on since the day you were born, and there’s still so much to learn, experience and discover.</p>
+<p>There will be good days, confusing days, new people, new experiences and probably a few “what am I even doing?” moments too. 😅 Take it one step at a time and keep being the person you are.</p>
+</div></section>
+
+<section><div class="card">
+<div class="tiny">Chapter 02</div><h2>A little about you</h2>
+<p>Minnu, you’re one of those people who somehow brings a little more life into the room just by being there. You can be cute, funny, completely annoying 😂 and still somehow be one of the easiest people to care about.</p>
+<p>You’re an important part of our family, and I’m genuinely happy to have so many memories with you. Keep your smile, your craziness and that little bit of Minnu energy that makes you… well, you.</p>
+</div></section>
+
+<section><div class="card">
+<div class="tiny">Chapter 03</div><h2>18 little things</h2>
+<div class="things">
+<div class="thing"><b>01.</b> Keep smiling.</div><div class="thing"><b>02.</b> Keep learning.</div>
+<div class="thing"><b>03.</b> Keep fighting.</div><div class="thing"><b>04.</b> Keep being you.</div>
+<div class="thing"><b>05.</b> Make good memories.</div><div class="thing"><b>06.</b> Choose good people.</div>
+<div class="thing"><b>07.</b> Don’t lose your craziness.</div><div class="thing"><b>08.</b> Enjoy the little things.</div>
+<div class="thing"><b>09.</b> Dream bigger.</div><div class="thing"><b>10.</b> Learn from mistakes.</div>
+<div class="thing"><b>11.</b> Stay kind.</div><div class="thing"><b>12.</b> Take care of yourself.</div>
+<div class="thing"><b>13.</b> Make yourself proud.</div><div class="thing"><b>14.</b> Keep your people close.</div>
+<div class="thing"><b>15.</b> Never stop trying.</div><div class="thing"><b>16.</b> Laugh a lot.</div>
+<div class="thing"><b>17.</b> Enjoy being 18.</div><div class="thing"><b>18.</b> Make this chapter count.</div>
+</div></div></section>
+
+<section><div class="card">
+<div class="tiny">Chapter 04</div><h2>Some memories 📸</h2>
+<p>Replace these spaces with your favourite photos of Minnu.</p>
+<div class="memory-grid">
+<div class="photo">Your favourite photo here</div><div class="photo">A funny memory here 😂</div>
+<div class="photo">A family memory here</div><div class="photo">One more favourite moment</div>
+</div></div></section>
+
+<section><div class="card">
+<div class="tiny">Chapter 05</div>
+<p class="quote">“Whatever happens, good or bad, always remember that you have people who genuinely care about you. You have us. And you have me, for sure. ❤️”</p>
+<p style="text-align:center">I genuinely believe you’re going to be someone special in our bloodline, and I’m excited to see where life takes you.</p>
+</div></section>
+
+<div class="footer">
+<div style="font-size:30px">♡</div><h2>Happy 18th Birthday, Deepikaaah!</h2>
+<p>Keep smiling. Keep fighting. Keep being you.</p><p><b>With love,<br>Gokul</b></p>
+<div class="note">Made especially for Minnu — with a little more effort than a normal “HBD” 😂</div>
+</div>
+</div>
+
+<script>
+function toggleMusic(){
+ const a=document.getElementById("bgm");
+ if(a.paused){a.play().catch(()=>alert("Add a music.mp3 file to the repository first."));}
+ else a.pause();
+}
+</script>
+</body>
+</html>
